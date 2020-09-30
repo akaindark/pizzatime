@@ -6,6 +6,19 @@ html{
 *::after{
   box-sizing: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
 a{
   display: inline-block;
   text-decoration: none;
@@ -17,15 +30,17 @@ li{
   list-style: none;
 }
 body{
-  font-family: 'Roboto', sans-serif;
+  @include fw300;
   font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.375;
+  color: $title;
   padding: 0;
   margin: 0;
 }
 .container{
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
